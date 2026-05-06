@@ -10,8 +10,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "work_experiences")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -40,6 +39,7 @@ public class WorkExperience {
 
     private LocalDate endDate;
 
+    @Column(name = "is_current_role")
     private boolean currentRole;
 
 

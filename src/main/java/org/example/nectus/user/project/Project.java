@@ -30,7 +30,7 @@ public class Project {
     private String title;
 
     private String description;
-    private String Url;
+    private String url;
     private LocalDate startDate;
     private LocalDate endDate;
 }

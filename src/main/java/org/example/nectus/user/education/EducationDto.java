@@ -1,0 +1,15 @@
+package org.example.nectus.user.education;
+
+import java.time.LocalDate;
+import java.util.UUID;
+
+public record EducationDto(
+        UUID id,
+        String institution,
+        String degree,
+        String fieldOfStudy,
+        LocalDate startDate,
+        LocalDate endDate,
+        String description
+) {
+}
