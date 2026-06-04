@@ -38,7 +38,7 @@ public class ConnectionService {
         connectionRepository.findConnectionBetween(currentUser.getId(), targetId)
                 .ifPresent(existing -> {
                     throw new RuntimeException(
-                            "Coneection already exists with satus: " + existing.getStatus()
+                            "Connection already exists with status: " + existing.getStatus()
                     );
                 });
 
